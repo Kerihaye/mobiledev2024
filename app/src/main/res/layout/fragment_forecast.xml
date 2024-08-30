@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#20FF0000"> <!-- Semi-transparent red background -->
+
+    <!-- TextView for title -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_5_day_weather_forecast"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- TextView for individual day forecasts -->
+    <TextView
+        android:id="@+id/day_one_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monday_sunny_25_c"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/day_two_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tuesday_cloudy_22_c"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/day_three_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wednesday_rainy_18_c"
+        android:layout_marginTop="8dp" />
+
+    <!-- Add more TextViews as needed -->
+
+</LinearLayout>

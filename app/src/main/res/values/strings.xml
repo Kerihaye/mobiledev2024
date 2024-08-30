@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">usth_weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather_forecast">Weather Forecast</string>
+    <string name="_5_day_weather_forecast">5-Day Weather Forecast</string>
+    <string name="monday_sunny_25_c">Monday: Sunny, 25°C</string>
+    <string name="tuesday_cloudy_22_c">Tuesday: Cloudy, 22°C</string>
+    <string name="wednesday_rainy_18_c">Wednesday: Rainy, 18°C</string>
+</resources>
