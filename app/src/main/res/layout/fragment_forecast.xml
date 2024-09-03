@@ -39,5 +39,19 @@
         android:layout_marginTop="8dp" />
 
     <!-- Add more TextViews as needed -->
+    <TextView
+        android:id="@+id/textview_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- ImageView để hiển thị biểu tượng thời tiết -->
+    <ImageView
+        android:id="@+id/imageview_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sun" /> <!-- Đảm bảo có biểu tượng thời tiết trong drawable-hdpi -->
 
 </LinearLayout>
