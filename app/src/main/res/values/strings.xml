@@ -3,8 +3,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weather_forecast">Weather Forecast</string>
-    <string name="_5_day_weather_forecast">5-Day Weather Forecast</string>
-    <string name="monday_sunny_25_c">Monday: Sunny, 25°C</string>
-    <string name="tuesday_cloudy_22_c">Tuesday: Cloudy, 22°C</string>
-    <string name="wednesday_rainy_18_c">Wednesday: Rainy, 18°C</string>
+    <string name="_5_day_weather_forecast">7-Day Weather Forecast</string>
+
+    <string name="mon">Monday</string>
+    <string name="tue">Tuesday</string>
+    <string name="wed">Wednesday</string>
+    <string name="thu">Thursday</string>
+    <string name="fri">Friday</string>
+    <string name="sat">Saturday</string>
+    <string name="sun">Sunday</string>
+
+    <string name="rainy_22_c">Rainy, 21°C</string>
+    <string name="sunny_25_c">Sunny, 25°C</string>
+    <string name="snow_1_c">Snowy, 1°C</string>
+    <string name="cloud_22_c">Cloudy, 22°C</string>
+    <string name="extremeweather_20_c">Thunder Storm, 20°C</string>
+    <string name="windy_20_c">Windy, 20°C</string>
+
+
 </resources>
