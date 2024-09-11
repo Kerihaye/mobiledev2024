@@ -2,25 +2,44 @@ package vn.edu.usth.usth_weather;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 public class WeatherActivity extends AppCompatActivity {
+
+    private ViewPager viewPager;
+    private WeatherPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        // Khởi tạo ViewPager và thiết lập adapter
+        viewPager = findViewById(R.id.viewPager);
+        adapter = new WeatherPagerAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
 
-        header header = new header();
-        fragmentTransaction.replace(R.id.fragment_container_header, header);
+    }
 
-        ForecastFragment forecastFragment = new ForecastFragment();
-        fragmentTransaction.replace(R.id.fragment_container_forecast, forecastFragment);
+    private class WeatherPagerAdapter extends FragmentStatePagerAdapter {
 
-        fragmentTransaction.commit();
+        public WeatherPagerAdapter(FragmentManager fm) {
+            super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            // Trả về một instance mới của WeatherAndForecastFragment
+            return new WeatherAndForecastFragment();
+        }
+
+        @Override
+        public int getCount() {
+            // Số trang trong ViewPager
+            return 3;
+        }
     }
 }

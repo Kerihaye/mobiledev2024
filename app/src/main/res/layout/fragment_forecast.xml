@@ -3,14 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="15dp"
+    android:layout_marginTop="0dp"
     android:layout_marginBottom="15dp"
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".WeatherActivity"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:id="@+id/forecast_fragment_container
+">
 
 
 
@@ -18,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_gravity="center"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal">
 
         <TextView
@@ -26,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/mon" />
+            android:text="@string/mon"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -49,7 +52,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -58,7 +61,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tue"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -80,7 +84,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -89,7 +93,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/wed"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -111,7 +116,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -120,7 +125,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/thu"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -142,7 +148,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -151,7 +157,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fri"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -175,7 +182,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -184,7 +191,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sat"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
@@ -206,7 +214,7 @@
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:background="#99CCFF"
+        android:background="#CCCCCC"
         android:orientation="horizontal"
         android:layout_gravity="center">
 
@@ -215,7 +223,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sun"
-            android:layout_marginTop="8dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"/>
 
 
         <ImageView
