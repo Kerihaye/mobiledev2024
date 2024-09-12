@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">usth_weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="weather_forecast">Weather Forecast</string>
     <string name="_5_day_weather_forecast">7-Day Weather Forecast</string>
@@ -19,6 +18,8 @@
     <string name="cloud_22_c">Cloudy, 22°C</string>
     <string name="extremeweather_20_c">Thunder Storm, 20°C</string>
     <string name="windy_20_c">Windy, 20°C</string>
+
+    <string name="viewpager_description">nothing</string>
 
 
 </resources>
