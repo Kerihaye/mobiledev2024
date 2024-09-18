@@ -6,29 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/header_fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="65dp" />
-
+    <!-- tabLayout for the header -->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:contentDescription="@string/tab_layout_description"
+        android:layout_height="wrap_content"
         app:tabGravity="fill"
         app:tabMode="fixed" />
 
+    <!-- viewPager for swiping between fragments -->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="595dp"
-        android:contentDescription="@string/view_pager_description">
-
-    </androidx.viewpager.widget.ViewPager>
-
-
-
-
+        android:layout_height="match_parent" />
 
 </LinearLayout>

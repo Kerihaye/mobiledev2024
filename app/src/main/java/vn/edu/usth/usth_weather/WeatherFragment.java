@@ -28,6 +28,7 @@ public class WeatherFragment extends Fragment {
     private String mParam2;
 
     public WeatherFragment() {
+        // Required empty public constructor
     }
 
     /**
@@ -60,21 +61,20 @@ public class WeatherFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_weather, container, false);
 
+        // Find TextViews for temperature and condition
         TextView temperatureView = view.findViewById(R.id.text_view_temperature);
         TextView conditionView = view.findViewById(R.id.text_view_condition);
         TextView cityView = view.findViewById(R.id.text_view_city);
 
+        // Find ImageView for weather icon
         ImageView weatherIconView = view.findViewById(R.id.image_view_icon);
 
-        temperatureView.setText("12C");
-        conditionView.setText("Cloudy");
-        cityView.setText("Paris");
 
-        weatherIconView.setImageResource(R.drawable.baseline_cloud_24);
-
-        view.setBackgroundColor(Color.parseColor("#DFFFD6"));
+        // Set a sample weather icon (change to the appropriate weather condition image)
+        weatherIconView.setImageResource(R.drawable.cloudy);
 
         return view;
     }

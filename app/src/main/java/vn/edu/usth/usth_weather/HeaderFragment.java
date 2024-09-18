@@ -12,12 +12,6 @@ public class HeaderFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the header layout
-        View view = inflater.inflate(R.layout.header, container, false);
-
-        // Set the background color if necessary
-        view.setBackgroundColor(Color.parseColor("#FFFFFF"));
-
-        return view;
+        return inflater.inflate(R.layout.header, container, false);
     }
 }

@@ -39,16 +39,19 @@ public class WeatherAndForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_weather_and_forecast, container, false);
 
+        // Add WeatherFragment
         Fragment weatherFragment = new WeatherFragment();
         getChildFragmentManager().beginTransaction()
-                .replace(R.id.weather_fragment_container, weatherFragment)
+                .replace(R.id.fragment_container_weather, weatherFragment)
                 .commit();
 
-        Fragment forecastFragment = new vn.edu.usth.usth_weather.ForecastFragment();
+        // Add ForecastFragment
+        Fragment forecastFragment = new ForecastFragment();
         getChildFragmentManager().beginTransaction()
-                .replace(R.id.forecast_fragment_container, forecastFragment)
+                .replace(R.id.fragment_container_forecast, forecastFragment)
                 .commit();
 
         return view;
